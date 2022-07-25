@@ -65,7 +65,7 @@ with open('hexmap.svg', 'w') as f:
     f.write('<rect x="0" y="0" width="%s" height="%s" fill="none" stroke="white" stroke-width="1" />\n' %(xCanvusSize, yCanvusSize))
 
 for i in range( haxLayers ):
-              hexPaper( pow(hexScaleFactor, i) * baseScaleFactor, hexLineColors[i] )
+    hexPaper( pow(hexScaleFactor, i) * baseScaleFactor, hexLineColors[i] )
 
 with open('hexmap.svg', 'a') as f:
     f.write('</svg>\n')
